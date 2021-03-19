@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bruno Elias - Desenvolvedor</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body onscroll="animations()">
+        <header>
+            
+            <div id="menu-hamburguerDiv">
+                <input id="menu-hamburguer" type="checkbox" onclick="mobileMenu(this)" />
+
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                    <span class="hamburguer"></span>
+                    </div>
+                </label>
+            </div>
+
+            <nav id="top-menu" class="menu-div menu-hide">
+                <div>
+                    <ul>
+                        <li><a href="#experiences">Experiências</a></li>
+                        <li><a href="#knowledges">Conhecimentos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div id="name-div" class="title">
+                <h1 id="name"><span>BRUNO</span> ELIAS</h1>
+                <h2>Desenvolvedor Web</h2>
+            </div>
+        </header>
+        <div id="main">
+            <div id="experiences">
+                <h2>EXPERIÊNCIAS</h2>
+                <div id="xp-1" class="reveal">
+                    <div>
+                        <h3>Central Usinagem</h3>
+                        <p class="xp-text">Site desenvolvido como projeto freelancer para uma empresa de usinagem e caldeiraria. Desenvolvido utilizando HTML, CSS, Javascrip e PHP.</p>
+                        <p class="xp-link"><a target="_blank" href="http://centralusinagem.com.br/">Visitar site!</a></p>
+                    </div>
+                    <span class="xpImage"><img src="./images/works_0.png" alt="xp-1-image" width="350"></span>
+                </div>
+            </div>
+
+            <div id="knowledges">
+                <h2>CONHECIMENTOS</h2>
+                <div id="know-div">
+                    <div id="know-1" class="reveal">
+                        <div class="know-content">
+                            <h3>Back End</h3>
+                            <p>Intermediário: Javascript, Nodejs, Banco de dados e APIRest.</p>
+                            <p>Básico:  C# ASP.NET.</p> 
+                        </div>
+
+                        <!--<div class="know-letter"><p>B</p></div>-->
+                    </div>
+
+                    <div id="know-2" class="reveal">
+                        <div class="know-content">
+                            <h3>Front End Web</h3>
+                            <p>Intermediário: HTML, CSS, Javascript e Figma</p>
+                            <p>Básico: React Js.</p>
+                        </div>
+
+                        <!--<div class="know-letter"><p>F</p></div>-->
+                    </div>
+
+                    <div id="know-3" class="reveal">
+                        <div class="know-content">
+                            <h3>Análise e Desenvolvimento de Sistemas</h3>
+                            <h4>Fev 2020 - Fev 2023</h4>
+                            <p>Diciplinas cursadas: Fundamentos e arquitetura de computadores,
+                                 Gestão e desenvolvimento de equipes, Algoritmos e lógica de programação I, 
+                                 Algoritmos e lógica de programação II,
+                                Lógica para computação.</p>
+                        </div>
+
+                        <!--<div class="know-letter"><p>E</p></div>-->
+                    </div>
+
+                    <div id="know-4" class="reveal">
+                        <div class="know-content">
+                            <h3>Front End Mobile & Desktop</h3>
+                            <p>Básico:  Javascript, React Native e Electron.</p>
+                        </div>
+
+                        <!--<div class="know-letter"><p>F</p></div>-->
+                    </div>
+                </div>
+                <div id="know-link"><a href="https://github.com/brunoeco" target="_blank">Acessar GitHub</a></div>
+            </div>
+        </div>
+        <footer>
+            <span id="perfil"><img src="./images/perfil.png" alt="perfil-image"></span>
+
+            <div>
+                <div id="footer-content" class="reveal">
+                    <div id="contact">
+                        <h2>BRUNO ELIAS</h2>
+                        <h3>Desenvolvedor Web</h3>
+
+                        <div id="email">
+                            <span><img src="./images/email-icon.png" alt="email-image"></span>
+                            <p>brunoelias93@gmail.com</p>
+                        </div>
+
+                        <div id="whatsapp">
+                            <span><img src="./images/whatsapp-icon.png" alt="whatsapp-image"></span>
+                            <p>+55 31 97521-7118</p>
+                        </div>
+
+                        <div id="adress">
+                            <span><img src="./images/adress-icon.png" alt="adress-image"></span>
+                            <p>Industrial, Contagem - MG</p>
+                        </div>
+
+                        <div id="lingit">
+                            <div id="github">
+                                <span><a target="_blank" href="https://github.com/brunoeco"><img src="./images/github_icon.png" alt="github-image"></a></span>
+                            </div>
+                            
+                            <div id="linkedin">
+                                <span><a target="_blank" href="https://www.linkedin.com/in/bruno-elias-194bba182/"><img src="./images/linkedin-icon.png" alt="linkedin-image"></a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="about">
+                        <h3>Sobre</h3>
+                        <p>Olá, meu nome é Bruno Elias, tenho 20 anos, e estou cursando Análise e desenvolvimento de sistemas no seu segundo ano.
+                            Gosto de passar meu tempo livre estudando, escutando música, jogando ou pesquisando sobre astronomia ou
+                            tecnologia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./scripts.js"></script>
+    </body>
+</html>
