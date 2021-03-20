@@ -131,20 +131,8 @@ input:checked ~ label .hamburguer:after {
     color: #FF00E5;
 }
 
-.menu-div {
-    opacity: 0;
-    animation-name: menuReveal;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-play-state: paused;
-}
-
-.title {
-    opacity: 0;
-    animation-name: nameReveal;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-play-state: paused;
+#main {
+    overflow: hidden;
 }
 
 #experiences {
@@ -161,7 +149,7 @@ input:checked ~ label .hamburguer:after {
 
 #xp-1 {
     position: relative;
-    margin: 50px 0;
+    margin: 30px 0;
 }
 
 #xp-1 > div {
@@ -201,11 +189,11 @@ input:checked ~ label .hamburguer:after {
 
 #knowledges {
     margin: 0 5%;
+
 }
 
 #knowledges h2 {
-    padding-bottom: 20px;
-    padding-top: 80px;
+    padding-top: 30px;
     text-align: center;
 }
 
@@ -215,7 +203,6 @@ input:checked ~ label .hamburguer:after {
 
 #know-div {
     justify-items: center;
-    margin-bottom: 50px;
 }
 
 .know-content {
@@ -235,11 +222,48 @@ input:checked ~ label .hamburguer:after {
     align-content: flex-end;
 }
 
-#know-link {
+#projects {
     text-align: center;
 }
 
-#know-link a {
+#projects-div {
+    margin: 0 5%;
+}
+
+#projects-div img {
+    width: 100%;
+}
+
+#projects h2 {
+    margin-bottom: 30px;
+}
+
+.project-content {
+    position: relative;
+    margin: 10px 30px;
+}
+
+.project-content p {
+    position: absolute;
+    bottom: 0;
+    padding-top: 5px;
+
+    width: 100%;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.project-content a {
+    color: #FFFFFF;
+}
+
+#project-link {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+#project-link a {
     color: #FF00E5;
 }
 
@@ -309,6 +333,30 @@ footer p {
 }
 
 
+.menu-reveal {
+    opacity: 0;
+    animation-name: menuReveal;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+.title {
+    opacity: 0;
+    animation-name: nameReveal;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+.title-reveal {
+    opacity: 0;
+    animation-name: titleReveal;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
 .reveal {
     opacity: 0;
     animation-name: reveal;
@@ -347,24 +395,12 @@ footer p {
         font-size: 16px;
     }
     
-    #name-div h1{
-    }
-    
-    #name-div h2{
-    }
-    
     #experiences {
-        margin: 100px 15%;
+        margin: 50px 15%;
     }
     
     #experiences h2 {
-        padding-bottom: 50px;
-    }
-    
-    #experiences h3 {
-    }
-    
-    #experiences p {
+        padding-bottom: 30px;
     }
     
     #xp-1 > div {
@@ -380,12 +416,12 @@ footer p {
     }
     
     #knowledges {
-        margin: 100px 3%;
+        margin: 0px 3%;
     }
     
     #knowledges h2 {
-        padding-bottom: 50px;
-        padding-top: 100px;
+        padding-bottom: 30px;
+        padding-top: 50px;
     }
     
     #know-div {
@@ -411,10 +447,17 @@ footer p {
         width: 305px;
         padding: 20px;
     }
+
     
-    #know-link {
+    #projects-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    #project-link {
         padding-top: 50px;
     }
+
     footer {
         margin-top: 0;
     }
@@ -461,10 +504,25 @@ footer p {
     }
 }
 
+@keyframes titleReveal {
+    0% { 
+      opacity: 0;
+      transform: translate(0, 20%) 
+    }
+    
+    100% {
+      opacity: 1;
+      
+    transform: translate(0, 0);
+
+    }
+}
+
+
 @keyframes reveal {
     0% { 
       opacity: 0;
-      transform: scale(0.8)
+      transform: scale(0.9)
     }
     
     100% {

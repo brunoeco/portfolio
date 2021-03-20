@@ -18,6 +18,8 @@ function animations() {
 const nameDiv = document.getElementById("name-div");
 const topDiv = document.getElementById("top-menu");
 const reveal = Array.from(document.querySelectorAll('.reveal'));
+const menuReveal = Array.from(document.querySelectorAll('.menu-reveal'));
+const titleReveal = Array.from(document.querySelectorAll('.title-reveal'));
 const left = Array.from(document.querySelectorAll('.left'));
 
 function isOnScreen(element) {
@@ -37,6 +39,8 @@ topDiv.style.animationPlayState = 'running';
 
 window.onscroll = function () {
     reveal.forEach(playAnimation)
+    menuReveal.forEach(playAnimation)
+    titleReveal.forEach(playAnimation)
     left.forEach(playAnimation)
 };
 
