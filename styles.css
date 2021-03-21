@@ -194,7 +194,7 @@ input:checked ~ label .hamburguer:after {
 
 #knowledges h2 {
     padding-top: 30px;
-    text-align: center;
+    text-align: center; 
 }
 
 #knowledges h4 {
