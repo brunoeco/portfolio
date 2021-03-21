@@ -453,6 +453,10 @@ footer p {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    #projects h2 {
+        padding-top: 50px;
+    }
     
     #project-link {
         padding-top: 50px;
