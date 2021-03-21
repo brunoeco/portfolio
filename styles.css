@@ -246,6 +246,7 @@ input:checked ~ label .hamburguer:after {
 .project-content img:hover {
     filter: brightness(0.5);
     transition: ease 0.5s;
+    
 }
 
 .project-content p {
