@@ -253,12 +253,6 @@ input:checked ~ label .hamburguer:after {
     margin: 30px 30px;
 }
 
-.project-content img:hover {
-    filter: brightness(0.5);
-    transition: ease 0.5s;
-    
-}
-
 .project-content p {
     position: absolute;
     bottom: 0;
