@@ -154,6 +154,7 @@ input:checked ~ label .hamburguer:after {
 
 #xp-1 > div {
     padding: 20px;
+    min-height: 150px;
 
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
     border-left: 5px solid #7FFFD4;
@@ -230,6 +231,15 @@ input:checked ~ label .hamburguer:after {
     margin: 0 5%;
 }
 
+#project-background {
+    transition: ease 0.5s;
+}
+
+#project-background:hover {
+    filter: brightness(0.5);
+    transition: ease 0.5s;
+}
+
 #projects-div img {
     width: 100%;
 }
@@ -240,7 +250,7 @@ input:checked ~ label .hamburguer:after {
 
 .project-content {
     position: relative;
-    margin: 10px 30px;
+    margin: 30px 30px;
 }
 
 .project-content p {
@@ -259,7 +269,6 @@ input:checked ~ label .hamburguer:after {
 
 #project-link {
     margin-top: 30px;
-    margin-bottom: 80px;
     text-align: center;
 }
 
@@ -457,9 +466,16 @@ footer p {
     #projects h2 {
         padding-top: 50px;
     }
+
+    .project-content {
+        position: relative;
+        margin: 10px 10px;
+    }
     
     #project-link {
         padding-top: 50px;
+        margin-bottom: 80px;
+
     }
 
     footer {
@@ -470,16 +486,20 @@ footer p {
         display: grid;
         grid-template-columns: 1fr 1fr;
         
-        justify-items: center;
-        
         margin: 0 10%;
     }
 }
 
 @media (min-width: 1366px){
     #knowledges {
-        margin: 100px 10%;
+        margin: 0px 10%;
     }
+
+    
+    .project-content {
+        margin: 10px 30px;
+    }
+
     
 }
 
