@@ -212,6 +212,7 @@ input:checked ~ label .hamburguer:after {
 
 .know-content p {
     margin-top: 15px;
+    line-height: 21px;
 }
 
 .know-content {
