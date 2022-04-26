@@ -439,20 +439,6 @@ footer p {
         grid-template-columns: 1fr 1fr;
     }
     
-    #know-2, #know-4 {
-        position: relative;
-        
-        width: 100%;
-    }
-    
-    #know-2 > div, #know-4 > div {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-    
-        transform: translate(-50%, 0);
-    }
-    
     .know-content {
         width: 305px;
         padding: 20px;
